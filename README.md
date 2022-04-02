@@ -12,12 +12,14 @@ This website was build by using these technologies as:
 
 # How to run
 Pull source code from git, and run 
-`
+
+```
 pip3 install -r requirements.txt
 python3 run app.py
-`
+```
+
 # GUI:
-- login page: http::/127.0.0.1:5000/login
-- Basic author
+- login page: http://127.0.0.1:5000/login
+- Basic author:
 `test`/`password`
 
