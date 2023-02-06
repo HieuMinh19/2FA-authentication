@@ -42,7 +42,7 @@
       {% endwith %}
       <form method="POST">
         <div class="form-group">
-          <label for="otp">Generated OTP</label>
+          <label for="otp">Your OTP</label>
           <input type="hidden" name="secret" value="{{ secret }}" required>
           <input type="number" class="form-control" id="otp" name="otp" required>
         </div>
@@ -56,14 +56,11 @@
 
 <script>
   function copySecret() {
-    /* Get the text field */
-    var copyText = document.getElementById("secret");
+    let copyText = document.getElementById("secret");
 
-    /* Select the text field */
     copyText.select();
-    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+    copyText.setSelectionRange(0, 99999);
 
-    /* Copy the text inside the text field */
     document.execCommand("copy");
 
     alert("Successfully copied TOTP secret token!");
